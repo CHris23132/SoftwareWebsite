@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #e3d1f5, #ffffff); /* Add gradient from lavender to white */
+    min-height: 100vh; /* Ensure background covers the entire viewport */
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 40px; /* Increase the space between the logo and tabs */
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px; /* Add more space between the profile image and tabs */
+}
+
+.tab-button {
+    background-color: white; /* Change default tab color to white */
+    border: 2px solid #ddd;  /* Add a light border around each tab */
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333;  /* Default text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+}
+
+.tab-button:hover {
+    background-color: #f3f3f3; /* Slightly darker background on hover */
+}
+
+.tab-button.active {
+    background-color: #6200ea; /* Active tab background */
+    color: white; /* Active tab text color */
+    border-color: #6200ea; /* Active tab border */
+}
+
+main {
+    text-align: center;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.app-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.app-description {
+    text-align: center; /* Center the text */
+    margin-bottom: 20px;
+    padding: 0 15px; /* Add padding for better spacing */
+    max-width: 700px; /* Optional, to limit width */
+    margin-left: auto;
+    margin-right: auto; /* Center horizontally */
+    font-size: 18px; /* Slightly increase font size */
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Make the color a bit darker for readability */
+}
+
+.app-images {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    margin: 20px 0;
+}
+
+.single-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px; /* Apply rounded corners */
+    max-width: 600px; /* Set a maximum width */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Add some shadow for effect */
+}
+
+/* Popup Styles */
+.popup-container {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Translucent dark background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Make sure it's on top */
+}
+
+.popup-content {
+    position: relative;
+    text-align: center;
+}
+
+.popup-image {
+    max-width: 90vw; /* Ensure the image is responsive */
+    max-height: 90vh; /* Fit the image within the viewport */
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4); /* Add shadow for a better look */
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.close-popup:hover {
+    background-color: #4e00c8;
+}
+
+/* Center-align the text for the Computer Vision Development section */
+.app-section p {
+    text-align: center; /* Center-align the text */
+    font-size: 18px; /* Adjust font size for readability */
+    color: #555; /* Use a softer color */
+    line-height: 1.6; /* Adjust line height for better readability */
+    max-width: 700px; /* Limit the width of the text */
+    margin-left: auto;
+    margin-right: auto; /* Ensure the paragraph is centered within the section */
+    margin-top: 20px; /* Add some space above the paragraph */
+}
+
+
+/* Styling for the video */
+.app-video {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 100px; /* Add space below the video */
+}
+
+
+.app-video iframe {
+    width: 100%; /* Ensure the video still takes up the full width of its container */
+    max-width: 720px; /* Increase the max width of the video */
+    height: auto;
+    aspect-ratio: 16/9; /* Maintain the 16:9 aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for effect */
+}
+
+
+/* PDF and text side by side */
+.pdf-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px; /* Increase gap between PDF and text */
+    margin-top: 45px; /* Increase space above the PDF section */
+}
+
+
+.text-area {
+    max-width: 400px;
+    padding-left: 20px; /* Add padding to the left of the text */
+}
+
+
+.text-area h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-area p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+iframe {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Button to view the full PDF */
+.view-pdf-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6200ea;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.view-pdf-button:hover {
+    background-color: #4e00c8;
+}
+
+/* New Section: Heading, Subheading, and Spacer between video and PDF */
+.spacer {
+    margin-top: 40px; /* Space between video and the new heading */
+}
+
+.section-heading p {
+    text-align: center; /* Center-align the text */
+    font-size: 18px; /* Adjust font size for readability */
+    color: #555; /* Use a softer color */
+    line-height: 1.6; /* Adjust line height for better readability */
+    max-width: 700px; /* Limit width so text doesn't stretch too far */
+    margin-left: auto;
+    margin-right: auto; /* Ensure the paragraph is centered within the section */
+}
+
+
+.section-heading h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-heading p {
+    font-size: 18px;
+    color: #555;
+}
+/* Style for the app preview image */
+/* Style for the app-images container (already consistent) */
+.app-images {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    margin: 20px 0; /* Add space above and below the image */
+}
+
+/* Style for the preview images to keep them consistent */
+.app-preview-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px; /* Apply rounded corners for consistency */
+    max-width: 600px; /* Set a maximum width to match the other app images */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for consistency */
+}
+

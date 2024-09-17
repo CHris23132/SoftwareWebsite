@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Developer Firm Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="profile">
+            <img src="Images/IMG_7248.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="tabs">
+                <button class="tab-button active" data-target="tab1">Web & Mobile App Development</button>
+                <button class="tab-button" data-target="tab2">AI Application & Web Development</button>
+                <button class="tab-button" data-target="tab3">AR/VR App Development</button>
+                <button class="tab-button" data-target="tab4">Computer Vision App Development</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <main>
+        <!-- Tab 1: Web & Mobile App Development -->
+        <section id="tab1" class="tab-content active">
+            <div class="app-section">
+                <div class="app-description">
+                    <h2>Zoomer</h2>
+                    <p>Zoomer is a full stack marketplace app. It allows users to make peer to peer transactions using Stripe integration and post or reply to user listings.</p>
+                </div>
+                <div class="app-images">
+                    <img src="Images/Zoomer Frames.png" alt="Zoomer App" class="single-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab 2: AI Application & Web Development -->
+        <section id="tab2" class="tab-content">
+            <div class="app-section">
+                <div class="app-description">
+                    <h2>AI Application & Web Development</h2>
+                    <p>Explore our AI-based applications and web development projects. We specialize in creating intelligent solutions that leverage machine learning, AI, and cutting-edge web technologies.</p>
+                </div>
+                <div class="app-images">
+                    <img src="Images/imageslive preview (2).png" alt="AI Application Preview" class="app-preview-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab 3: AR/VR App Development -->
+        <section id="tab3" class="tab-content">
+            <div class="app-section">
+                <h2>AR Stop Motion</h2>
+                <p>Explore our work in Augmented and Virtual Reality. We design immersive experiences for a variety of industries.</p>
+                <div class="app-images">
+                    <img src="Images/PLAY 3D Cards.png" alt="AR/VR Development" class="app-preview-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab 4: Computer Vision Development -->
+        <section id="tab4" class="tab-content">
+            <div class="app-section">
+                <h2>Computer Vision Development</h2>
+                <p>Our expertise in computer vision powers applications that utilize image recognition and AI-based solutions for innovative projects.</p>
+
+                <!-- YouTube Video -->
+                <div class="app-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/K_ALeKfOh4w?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <!-- Spacer and New Heading -->
+                <div class="spacer"></div> <!-- Adds space between sections -->
+
+                <div class="section-heading">
+                    <h3>Research, Development & Application</h3>
+                    <p>Using modern best practices and innovations to apply the latest and best technology to add value to the user.</p>
+                </div>
+
+                <!-- PDF and Text Area Section (Below YouTube Video) -->
+                <div class="pdf-text-container">
+                    <!-- Embed the PDF using an iframe -->
+                    <iframe src="PDF/ML Animation Study (1).pdf" width="300" height="400" title="PDF"></iframe>
+
+                    <!-- Text description beside the PDF -->
+                    <div class="text-area">
+                        <h3>Creating Custom PyTorch Models</h3>
+                        <p>
+                            In this project I used and developed the skills of data collection, data labeling, synthetic data generations 
+                            and curation, model fine-tuning and refinement as well as built a better general understanding of working 
+                            with transformer models.
+                        </p>
+                        <!-- Button to view PDF in full screen -->
+                        <a href="PDF/ML Animation Study (1).pdf" target="_blank" class="view-pdf-button">View Full PDF</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Full-screen Popup Containers for Images -->
+    <!-- Popup for Zoomer -->
+    <div id="popup-container-zoomer" class="popup-container">
+        <div class="popup-content">
+            <img src="Images/Zoomer Frames.png" alt="Zoomer Full Preview" class="popup-image">
+            <button id="close-popup-zoomer" class="close-popup">Close</button>
+        </div>
+    </div>
+
+    <!-- Popup for AI Application -->
+    <div id="popup-container-ai" class="popup-container">
+        <div class="popup-content">
+            <img src="Images/imageslive preview (2).png" alt="AI Application Full Preview" class="popup-image">
+            <button id="close-popup-ai" class="close-popup">Close</button>
+        </div>
+    </div>
+
+    <!-- Popup for AR/VR Development -->
+    <div id="popup-container-arvr" class="popup-container">
+        <div class="popup-content">
+            <img src="Images/PLAY 3D Cards.png" alt="AR/VR Full Preview" class="popup-image">
+            <button id="close-popup-arvr" class="close-popup">Close</button>
+        </div>
+    </div>
+
+    <!-- External Script -->
+    <script src="script.js"></script>
+</body>
+</html>
