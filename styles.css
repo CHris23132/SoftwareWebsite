@@ -268,3 +268,125 @@ iframe {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for consistency */
 }
 
+/* Button styling */
+.app-button {
+    text-align: center; /* Center the button */
+    margin-top: 20px;   /* Add some space above the button */
+}
+
+.app-store-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #6200ea;  /* Button background color */
+    color: white;  /* Button text color */
+    border-radius: 5px;  /* Rounded corners */
+    text-decoration: none;  /* Remove underline */
+    font-size: 16px;
+    transition: background-color 0.3s ease;  /* Smooth transition */
+}
+
+.app-store-button:hover {
+    background-color: #4e00c8;  /* Darker background on hover */
+}
+/* Style for the app store button */
+/* Add more space under the first button */
+/* Add more space under the first button */
+/* Add more space under the first button */
+.button-container:first-of-type {
+    margin-bottom: 80px; /* Increase space under the first button */
+}
+
+/* Bring the second button closer to the embedded video */
+.button-container:last-of-type {
+    margin-top: 20px; /* Reduce space between video and the second button */
+}
+
+/* Ensure a balanced space around the video section */
+.video-section {
+    margin-bottom: 30px; /* Add space under the video */
+    margin-top: 30px; /* Ensure some space on top as well */
+}
+
+/* Button Styles */
+.app-store-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #6200ea;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px; /* Add a little margin on top of each button */
+}
+
+.app-store-button:hover {
+    background-color: #4e00c8; /* Darken the button on hover */
+}
+
+/* Styling for the video section */
+.video-section {
+    text-align: center;
+}
+
+.video-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.video-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Styling for the embedded video */
+.app-video {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.app-video iframe {
+    width: 100%; /* Ensure the video takes up the full width of its container */
+    max-width: 720px; /* Increase the max width of the video */
+    height: auto;
+    aspect-ratio: 16/9; /* Maintain the 16:9 aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow for effect */
+}
+
+
+/* Style for the app store buttons */
+/* Add more space under the first button */
+.button-container:first-of-type {
+    margin-bottom: 45px; /* Increase space under the first button */
+}
+
+/* Bring the second button closer to the embedded video */
+.button-container:last-of-type {
+    margin-top: 5px; /* Reduce space between video and the second button */
+}
+
+/* Additional padding for general spacing */
+.video-section {
+    margin-bottom: 10px; /* Ensure a balanced space around the video */
+}
+
+/* Button Styles */
+.app-store-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #6200ea;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Add a little margin on top */
+}
+
+.app-store-button:hover {
+    background-color: #4e00c8; /* Darken the button on hover */
+}
