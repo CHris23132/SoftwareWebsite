@@ -37,17 +37,20 @@ header {
 }
 
 .tab-button {
-    background-color: white; /* Change default tab color to white */
+    background-color: white; /* Default background color */
     border: 2px solid #ddd;  /* Add a light border around each tab */
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
     color: #333;  /* Default text color */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth hover transition */
 }
 
 .tab-button:hover {
-    background-color: #f3f3f3; /* Slightly darker background on hover */
+    background-color: #e3d1f5; /* Slightly darker background on hover */
+    color: #6200ea; /* Change text color on hover */
+    transform: scale(1.05); /* Slightly enlarge tab on hover */
+    box-shadow: 0px 4px 8px rgba(98, 0, 234, 0.2); /* Optional: Add shadow for effect */
 }
 
 .tab-button.active {
@@ -58,6 +61,7 @@ header {
 
 main {
     text-align: center;
+    margin-top: 40px; /* Ensure consistent space between tabs and content */
 }
 
 .tab-content {
@@ -71,7 +75,7 @@ main {
 .app-section {
     max-width: 900px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 40px 0; /* Ensure same padding for all sections */
 }
 
 .app-description {
@@ -162,10 +166,14 @@ main {
 .app-video {
     display: flex;
     justify-content: center;
-    margin-top: 45px;
-    margin-bottom: 100px; /* Add space below the video */
+    margin-top: 20px; /* Reduce space above the video */
+    margin-bottom: 20px; /* Reduce space below the video */
 }
 
+.video-section {
+    margin-bottom: 20px; /* Reduce margin around the entire section */
+    margin-top: 40px; /* Ensure space from tabs is the same across pages */
+}
 
 .app-video iframe {
     width: 100%; /* Ensure the video still takes up the full width of its container */
@@ -176,7 +184,6 @@ main {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for effect */
 }
 
-
 /* PDF and text side by side */
 .pdf-text-container {
     display: flex;
@@ -186,12 +193,10 @@ main {
     margin-top: 45px; /* Increase space above the PDF section */
 }
 
-
 .text-area {
     max-width: 400px;
     padding-left: 20px; /* Add padding to the left of the text */
 }
-
 
 .text-area h3 {
     font-size: 24px;
@@ -240,7 +245,6 @@ iframe {
     margin-right: auto; /* Ensure the paragraph is centered within the section */
 }
 
-
 .section-heading h3 {
     font-size: 28px;
     font-weight: bold;
@@ -251,8 +255,8 @@ iframe {
     font-size: 18px;
     color: #555;
 }
+
 /* Style for the app preview image */
-/* Style for the app-images container (already consistent) */
 .app-images {
     display: flex;
     justify-content: center; /* Center the image horizontally */
@@ -269,11 +273,18 @@ iframe {
 }
 
 /* Button styling */
+/* General button styling */
 .app-button {
     text-align: center; /* Center the button */
     margin-top: 20px;   /* Add some space above the button */
 }
 
+/* Add extra space under the first button only */
+.app-button:first-of-type {
+    margin-bottom: 80px; /* Add more space below the first button */
+}
+
+/* App store button styling */
 .app-store-button {
     display: inline-block;
     padding: 12px 25px;
@@ -288,105 +299,27 @@ iframe {
 .app-store-button:hover {
     background-color: #4e00c8;  /* Darker background on hover */
 }
-/* Style for the app store button */
-/* Add more space under the first button */
-/* Add more space under the first button */
-/* Add more space under the first button */
-.button-container:first-of-type {
-    margin-bottom: 80px; /* Increase space under the first button */
-}
 
-/* Bring the second button closer to the embedded video */
-.button-container:last-of-type {
-    margin-top: 20px; /* Reduce space between video and the second button */
-}
-
-/* Ensure a balanced space around the video section */
-.video-section {
-    margin-bottom: 30px; /* Add space under the video */
-    margin-top: 30px; /* Ensure some space on top as well */
-}
-
-/* Button Styles */
-.app-store-button {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #6200ea;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-    margin-top: 15px; /* Add a little margin on top of each button */
-}
-
-.app-store-button:hover {
-    background-color: #4e00c8; /* Darken the button on hover */
-}
-
-/* Styling for the video section */
-.video-section {
-    text-align: center;
-}
-
-.video-section h3 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.video-section p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-/* Styling for the embedded video */
-.app-video {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.app-video iframe {
-    width: 100%; /* Ensure the video takes up the full width of its container */
-    max-width: 720px; /* Increase the max width of the video */
-    height: auto;
-    aspect-ratio: 16/9; /* Maintain the 16:9 aspect ratio */
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow for effect */
-}
-
-
-/* Style for the app store buttons */
-/* Add more space under the first button */
+/* Extra spacing adjustments for buttons and video */
 .button-container:first-of-type {
     margin-bottom: 45px; /* Increase space under the first button */
 }
 
-/* Bring the second button closer to the embedded video */
 .button-container:last-of-type {
     margin-top: 5px; /* Reduce space between video and the second button */
 }
 
-/* Additional padding for general spacing */
 .video-section {
     margin-bottom: 10px; /* Ensure a balanced space around the video */
+    margin-top: 30px; /* Ensure space on top */
 }
 
-/* Button Styles */
-.app-store-button {
-    display: inline-block;
-    padding: 12px 20px;
-    background-color: #6200ea;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-    margin-top: 10px; /* Add a little margin on top */
-}
-
-.app-store-button:hover {
-    background-color: #4e00c8; /* Darken the button on hover */
+/* Additional text below video */
+.extra-description {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    max-width: 700px; /* Limit width to ensure readability */
+    margin: 20px auto 10px; /* Add space above and below */
+    line-height: 1.6; /* Increase line-height for readability */
 }
