@@ -54,10 +54,11 @@ header {
 }
 
 .tab-button.active {
-    background-color: #6200ea; /* Active tab background */
+    background-color: #7e57c2; /* Match the footer background color */
     color: white; /* Active tab text color */
-    border-color: #6200ea; /* Active tab border */
+    border-color: #7e57c2; /* Match the border color */
 }
+
 
 main {
     text-align: center;
@@ -75,8 +76,9 @@ main {
 .app-section {
     max-width: 900px;
     margin: 0 auto;
-    padding: 40px 0; /* Ensure same padding for all sections */
+    padding: 10px 0; /* Reduce the padding to bring content closer */
 }
+
 
 .app-description {
     text-align: center; /* Center the text */
@@ -322,4 +324,107 @@ iframe {
     max-width: 700px; /* Limit width to ensure readability */
     margin: 20px auto 10px; /* Add space above and below */
     line-height: 1.6; /* Increase line-height for readability */
+}
+/* Footer Styles */
+footer {
+    background-color: #7e57c2; /* Updated to a softer purple */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.footer-content, .footer-links {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-content h3, .footer-links h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-content p, .footer-links ul {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ccc;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    color: #ccc;
+}
+
+
+/* Policy Page Styles */
+.policy-page {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.policy-page h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.policy-page p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+/* Hover effect for images */
+.single-image, .app-preview-image {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth grow and shadow effect */
+}
+
+.single-image:hover, .app-preview-image:hover {
+    transform: scale(1.1); /* Grow the image slightly on hover */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Add a larger shadow on hover */
+}
+
+/* Add a pseudo-element to show the expand icon */
+.single-image::after, .app-preview-image::after {
+    content: '\1F5D6'; /* Unicode for "expand" icon (you can replace this with a better icon) */
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.8); /* Subtle white icon */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.3s ease; /* Fade in effect */
+}
+
+.single-image:hover::after, .app-preview-image:hover::after {
+    opacity: 1; /* Show the expand icon when hovered */
 }
